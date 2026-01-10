@@ -214,7 +214,7 @@ export function DeviceCard({ device, onToggle, onRemove, onUpdate, customIcon }:
             ) : (
               <>
                 <h3 className={cn(
-                  "font-bold text-sm transition-colors mb-0.5 truncate",
+                  "font-bold text-sm transition-colors mb-0.5 break-words whitespace-normal",
                   device.isOn ? "text-slate-800 dark:text-white" : "text-slate-700 dark:text-slate-300"
                 )}>
                   {device.name}
