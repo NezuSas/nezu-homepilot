@@ -1,0 +1,292 @@
+conversation.home_assistant | Home Assistant
+event.backup_automatic_backup | Backup Automatic backup
+sensor.backup_backup_manager_state | Backup Backup Manager state
+sensor.backup_next_scheduled_automatic_backup | Backup Next scheduled automatic backup
+sensor.backup_last_successful_automatic_backup | Backup Last successful automatic backup
+sensor.backup_last_attempted_automatic_backup | Backup Last attempted automatic backup
+scene.iniciar_la_manana | Iniciar la mañana 
+scene.nezu_zoom_camara | NEZU · Zoom + Cámara
+scene.prueba_2 | Prueba 2
+script.lock_board_script | Lock the Board Screen
+script.unlock_screen_script | Unlock the Board Screen
+script.power_off_screen_script | Power Off the Screen
+script.home_screen_script | Return to Home Screen
+script.open_zoom_script | Launch Zoom App
+script.open_meet_script | Launch Google Meet App
+script.open_board_app_script | Launch Board App
+script.open_projector_app_script | Launch Projector App
+script.get_volume_script | Get Current Volume
+script.volume_up_script | Increase Volume
+script.volume_down_script | Decrease Volume
+script.toggle_mute_script | Toggle Mute
+script.enable_rotation_script | Enable Screen Rotation
+script.disable_rotation_script | Disable Screen Rotation
+script.launch_browser_script | Launch Chrome Browser
+script.clear_notifications_script | Clear Android Notifications
+script.open_settings_script | Open Android Settings
+script.open_camera_script | Launch Camera App
+script.screenshot_script | Take Screenshot
+script.clear_chrome_cache_script | Clear Chrome App Cache
+script.restart_device_script | Restart the Device
+zone.nezu | NEZU
+zone.home | Home Assistant
+person.nezu | Nezu
+person.gustavo | Gustavo
+person.oscar | Oscar
+person.daniel | Daniel
+sun.sun | Sun
+sensor.sun_next_dawn | Sun Next dawn
+sensor.sun_next_dusk | Sun Next dusk
+sensor.sun_next_midnight | Sun Next midnight
+sensor.sun_next_noon | Sun Next noon
+sensor.sun_next_rising | Sun Next rising
+sensor.sun_next_setting | Sun Next setting
+input_text.nezu_oscar_cmds_index | NEZU Oscar cmds index
+update.sonoff_lan_update | Sonoff LAN update
+update.custom_sidebar_update | Custom Sidebar update
+update.card_mod_update | card-mod update
+update.youtube_update | youtube update
+update.alexa_media_player_update | Alexa Media Player update
+update.spotcast_update | Spotcast update
+update.google_home_update | Google Home update
+update.hacs_update | HACS update
+update.blackened_theme_update | Blackened Theme update
+update.config_template_card_update | Config Template Card update
+update.light_entity_card_update | Light Entity Card update
+update.browser_mod_update | browser_mod update
+update.ios_themes_dark_mode_and_light_mode_update | iOS Themes - Dark Mode and Light Mode update
+update.magic_home_party_card_update | Magic Home Party Card update
+tts.google_translate_en_com | Google Translate en com
+binary_sensor.ipad_de_guus_focus | iPad de Guus Focus
+device_tracker.ipad_de_guus | iPad de Guus
+sensor.ipad_de_guus_activity | iPad de Guus Activity
+sensor.ipad_de_guus_connection_type | iPad de Guus Connection Type
+sensor.ipad_de_guus_geocoded_location | iPad de Guus Geocoded Location
+sensor.ipad_de_guus_last_update_trigger | iPad de Guus Last Update Trigger
+sensor.ipad_de_guus_app_version | iPad de Guus App Version
+sensor.ipad_de_guus_location_permission | iPad de Guus Location permission
+sensor.ipad_de_guus_audio_output | iPad de Guus Audio Output
+sensor.ipad_de_guus_battery_level | iPad de Guus Battery Level
+sensor.ipad_de_guus_storage | iPad de Guus Storage
+sensor.ipad_de_guus_bssid | iPad de Guus BSSID
+sensor.ipad_de_guus_ssid | iPad de Guus SSID
+sensor.ipad_de_guus_battery_state | iPad de Guus Battery State
+sensor.ipad_de_guus_distance | iPad de Guus Distance
+sensor.ipad_de_guus_steps | iPad de Guus Steps
+device_tracker.iphone_de_guus | iPhone de Guus
+sensor.iphone_de_guus_battery_level | iPhone de Guus Battery Level
+sensor.iphone_de_guus_sim_2 | iPhone de Guus SIM 2
+sensor.iphone_de_guus_sim_1 | iPhone de Guus SIM 1
+sensor.iphone_de_guus_geocoded_location | iPhone de Guus Geocoded Location
+sensor.iphone_de_guus_last_update_trigger | iPhone de Guus Last Update Trigger
+sensor.iphone_de_guus_app_version | iPhone de Guus App Version
+sensor.iphone_de_guus_location_permission | iPhone de Guus Location permission
+sensor.iphone_de_guus_ssid | iPhone de Guus SSID
+sensor.iphone_de_guus_battery_state | iPhone de Guus Battery State
+sensor.iphone_de_guus_bssid | iPhone de Guus BSSID
+sensor.iphone_de_guus_storage | iPhone de Guus Storage
+sensor.iphone_de_guus_connection_type | iPhone de Guus Connection Type
+sensor.iphone_de_guus_audio_output | iPhone de Guus Audio Output
+todo.shopping_list | Shopping List
+media_player.pantalla_oficina | Pantalla Oficina
+weather.forecast_home | Climate
+light.ingreso_switch_1 | Acuario
+media_player.atom_atom_speaker | Atom Echo Atom Speaker
+light.ingreso_switch_2 | Estar
+light.ingreso_switch_3 | Mueble
+light.ingreso_switch_4 | Ingreso
+light.desayunador_blanca | Desayunador blanca 
+media_player.googlehome0100 | Taller speaker
+automation.esc_1 | Esc-1
+automation.nueva_automatizacion | Nueva automatización
+automation.refrescar_comandos_al_abrir_dashboard_oscar | Refrescar comandos al abrir/recargar dashboard Oscar (evento nativo)
+automation.nezu_discovery_mqtt_desde_sensor_rest_board_1 | NEZU • Discovery MQTT desde sensor REST (board 1)
+automation.nezu_bridge_mqtt_rest_execute | NEZU • Bridge MQTT → REST execute
+automation.nezu_discovery_bridge_todo_en_uno | NEZU · Discovery + Bridge (todo en uno)
+light.ingreso_backlight | Ingreso  Backlight
+select.ingreso_power_on_behavior | Ingreso  Power on behavior
+switch.ingreso_switch_1 | Acuario
+switch.ingreso_switch_2 | Estar
+switch.ingreso_switch_3 | Mueble
+switch.ingreso_switch_4 | Ingreso
+switch.nezu_adb_192_168_1_37_5555_nezu_pizarra | NEZU ADB 192.168.1.37:5555 NEZU Pizarra
+switch.nezu_adb_192_168_1_37_5555_nezu_inicio | NEZU ADB 192.168.1.37:5555 NEZU Inicio
+switch.nezu_adb_192_168_1_37_5555_nezu_meet | NEZU ADB 192.168.1.37:5555 NEZU Meet
+sensor.commands_oficina | commands_oficina
+switch.nezu_adb_192_168_1_37_5555_nezu_proyector | NEZU ADB 192.168.1.37:5555 NEZU Proyector
+switch.nezu_adb_192_168_1_37_5555_nezu_youtube | NEZU ADB 192.168.1.37:5555 NEZU YouTube
+switch.nezu_adb_192_168_1_37_5555_nezu_zoom | NEZU ADB 192.168.1.37:5555 NEZU Zoom
+switch.nezu_adb_192_168_1_37_5555_nezu_brave | NEZU ADB 192.168.1.37:5555 NEZU Brave
+switch.nezu_adb_192_168_1_37_5555_nezu_chrome | NEZU ADB 192.168.1.37:5555 NEZU Chrome
+switch.nezu_adb_192_168_1_37_5555_nezu_camara | NEZU ADB 192.168.1.37:5555 NEZU Camara
+switch.nezu_adb_192_168_1_37_5555_nezu_limpiar_cache | NEZU ADB 192.168.1.37:5555 NEZU Limpiar caché
+switch.nezu_adb_192_168_1_37_5555_nezu_notificaciones | NEZU ADB 192.168.1.37:5555 NEZU Notificaciones
+switch.nezu_adb_192_168_1_37_5555_nezu_bloquear | NEZU ADB 192.168.1.37:5555 NEZU Bloquear
+switch.nezu_adb_192_168_1_37_5555_nezu_silencio | NEZU ADB 192.168.1.37:5555 NEZU Silencio
+switch.nezu_adb_192_168_1_37_5555_nezu_apagar | NEZU ADB 192.168.1.37:5555 NEZU Apagar
+switch.nezu_adb_192_168_1_37_5555_nezu_reiniciar | NEZU ADB 192.168.1.37:5555 NEZU Reiniciar
+switch.nezu_adb_192_168_1_37_5555_nezu_captura | NEZU ADB 192.168.1.37:5555 NEZU Captura
+switch.nezu_adb_192_168_1_37_5555_nezu_ajustes | NEZU ADB 192.168.1.37:5555 NEZU Ajustes
+switch.nezu_adb_192_168_1_37_5555_nezu_desbloquear | NEZU ADB 192.168.1.37:5555 NEZU Desbloquear
+switch.nezu_adb_192_168_1_37_5555_nezu_bajar_volumen | NEZU ADB 192.168.1.37:5555 NEZU Bajar volumen
+switch.nezu_adb_192_168_1_37_5555_nezu_subir_volumen | NEZU ADB 192.168.1.37:5555 NEZU Subir volumen
+switch.sonoff_1000f28266 | Gata
+switch.sonoff_100177eb58_1 | Channel1
+switch.sonoff_100177eb58_2 | Desayunador blanca 
+switch.sonoff_100177eb58_3 | Desayunador cálida 
+switch.sonoff_100177eb58_4 | Mesón 
+switch.sonoff_1001578895_1 | Dicroicos 
+switch.sonoff_1001578895_2 | Central 
+switch.sonoff_1000f2f31f | Cocina
+switch.sonoff_10010fe8d5_1 | Central 
+switch.sonoff_10010fe8d5_2 | Secundaria
+switch.sonoff_10010fe8d5_3 | Jardín 
+sensor.pantalla_oficina_device | Pantalla Oficina device
+sensor.pantalla_oficina_alarms | Pantalla Oficina alarms
+sensor.pantalla_oficina_timers | Pantalla Oficina timers
+sensor.taller_speaker_device | Taller speaker device
+sensor.taller_speaker_alarms | Taller speaker alarms
+sensor.taller_speaker_timers | Taller speaker timers
+switch.pantalla_oficina_do_not_disturb | Pantalla Oficina Do Not Disturb
+switch.taller_speaker_do_not_disturb | Taller speaker Do Not Disturb
+number.pantalla_oficina_alarm_volume | Pantalla Oficina alarm volume
+number.taller_speaker_alarm_volume | Taller speaker alarm volume
+sensor.browser_mod_17b58ed9_487de7e3_browser_id | browser_mod_17b58ed9_487de7e3 Browser ID
+sensor.browser_mod_17b58ed9_487de7e3_browser_path | browser_mod_17b58ed9_487de7e3 Browser path
+sensor.browser_mod_17b58ed9_487de7e3_browser_visibility | browser_mod_17b58ed9_487de7e3 Browser visibility
+sensor.browser_mod_17b58ed9_487de7e3_browser_useragent | browser_mod_17b58ed9_487de7e3 Browser userAgent
+sensor.browser_mod_17b58ed9_487de7e3_browser_user | browser_mod_17b58ed9_487de7e3 Browser user
+binary_sensor.browser_mod_17b58ed9_487de7e3_browser_fullykiosk | browser_mod_17b58ed9_487de7e3 Browser FullyKiosk
+sensor.browser_mod_17b58ed9_487de7e3_browser_width | browser_mod_17b58ed9_487de7e3 Browser width
+sensor.browser_mod_17b58ed9_487de7e3_browser_height | browser_mod_17b58ed9_487de7e3 Browser height
+binary_sensor.browser_mod_17b58ed9_487de7e3_browser_dark_mode | browser_mod_17b58ed9_487de7e3 Browser dark mode
+binary_sensor.browser_mod_17b58ed9_487de7e3 | browser_mod_17b58ed9_487de7e3
+light.browser_mod_17b58ed9_487de7e3_screen | browser_mod_17b58ed9_487de7e3 Screen
+media_player.browser_mod_17b58ed9_487de7e3 | browser_mod_17b58ed9_487de7e3
+sensor.browser_mod_17b58ed9_487de7e3_panel | browser_mod_17b58ed9_487de7e3 Panel
+media_player.echo_dot_de_nezu | Echo Dot de Nezu
+media_player.this_device | This Device
+switch.echo_dot_de_nezu_do_not_disturb_switch | Echo Dot de Nezu do not disturb switch
+switch.echo_dot_de_nezu_shuffle_switch | Echo Dot de Nezu shuffle switch
+switch.echo_dot_de_nezu_repeat_switch | Echo Dot de Nezu repeat switch
+switch.this_device_do_not_disturb_switch | This Device do not disturb switch
+sensor.echo_dot_de_nezu_next_alarm | Echo Dot de Nezu next Alarm
+sensor.echo_dot_de_nezu_next_timer | Echo Dot de Nezu next Timer
+sensor.echo_dot_de_nezu_next_reminder | Echo Dot de Nezu next Reminder
+sensor.this_device_next_alarm | This Device next Alarm
+sensor.this_device_next_timer | This Device next Timer
+sensor.this_device_next_reminder | This Device next Reminder
+sensor.broadcom_adsl_router_external_ip | External IP
+sensor.broadcom_adsl_router_download_speed | Download speed
+sensor.broadcom_adsl_router_upload_speed | Upload speed
+button.addressable_v3_5v_136093_restart | Restart
+button.addressable_v3_5v_136093_unpair_remotes | Unpair remotes
+light.addressable_v3_5v_136093 | N/A
+number.addressable_v3_5v_136093_pixels_per_segment | Pixels per segment
+number.addressable_v3_5v_136093_segments | Segments
+number.addressable_v3_5v_136093_music_pixels_per_segment | Music pixels per segment
+number.addressable_v3_5v_136093_music_segments | Music segments
+number.addressable_v3_5v_136093_effect_speed | Effect speed
+select.addressable_v3_5v_136093_wiring | Wiring
+select.addressable_v3_5v_136093_ic_type | IC type
+select.addressable_v3_5v_136093_remote_config | Remote config
+sensor.addressable_v3_5v_136093_paired_remotes | Paired remotes
+switch.addressable_v3_5v_136093_remote_access | Remote access
+switch.addressable_v3_5v_136093_music | Music
+media_player.pizarra_nezu_3 | Pizarra NEZU
+media_player.oficina_tv | Oficina TV
+media_player.offi | Offi
+media_player.home | Home
+media_player.offi_g | Offi G
+media_player.cuarto_gus | N/A
+media_player.audio_casa | N/A
+media_player.chromecast | N/A
+media_player.pantalla | N/A
+media_player.rafa | Rafa
+media_player.kd_43xe8005 | KD-43XE8005
+sensor.browser_mod_a50818cf_ac8e952f_browser_path | browser_mod_a50818cf_ac8e952f Browser path
+sensor.browser_mod_a50818cf_ac8e952f_browser_visibility | browser_mod_a50818cf_ac8e952f Browser visibility
+sensor.browser_mod_a50818cf_ac8e952f_browser_useragent | browser_mod_a50818cf_ac8e952f Browser userAgent
+sensor.browser_mod_a50818cf_ac8e952f_browser_user | browser_mod_a50818cf_ac8e952f Browser user
+binary_sensor.browser_mod_a50818cf_ac8e952f_browser_fullykiosk | browser_mod_a50818cf_ac8e952f Browser FullyKiosk
+sensor.browser_mod_a50818cf_ac8e952f_browser_width | browser_mod_a50818cf_ac8e952f Browser width
+sensor.browser_mod_a50818cf_ac8e952f_browser_height | browser_mod_a50818cf_ac8e952f Browser height
+binary_sensor.browser_mod_a50818cf_ac8e952f_browser_dark_mode | browser_mod_a50818cf_ac8e952f Browser dark mode
+binary_sensor.browser_mod_a50818cf_ac8e952f | browser_mod_a50818cf_ac8e952f
+light.browser_mod_a50818cf_ac8e952f_screen | browser_mod_a50818cf_ac8e952f Screen
+media_player.browser_mod_a50818cf_ac8e952f | browser_mod_a50818cf_ac8e952f
+sensor.browser_mod_a50818cf_ac8e952f_panel | browser_mod_a50818cf_ac8e952f Panel
+sensor.browser_mod_6362bdf5_0185ec78_browser_path | Browser path
+sensor.browser_mod_6362bdf5_0185ec78_browser_visibility | Browser visibility
+sensor.browser_mod_6362bdf5_0185ec78_browser_useragent | Browser userAgent
+sensor.browser_mod_6362bdf5_0185ec78_browser_user | Browser user
+binary_sensor.browser_mod_6362bdf5_0185ec78_browser_fullykiosk | Browser FullyKiosk
+sensor.browser_mod_6362bdf5_0185ec78_browser_width | Browser width
+sensor.browser_mod_6362bdf5_0185ec78_browser_height | Browser height
+binary_sensor.browser_mod_6362bdf5_0185ec78_browser_dark_mode | Browser dark mode
+binary_sensor.browser_mod_6362bdf5_0185ec78 | N/A
+light.browser_mod_6362bdf5_0185ec78_screen | Screen
+media_player.browser_mod_6362bdf5_0185ec78 | N/A
+sensor.browser_mod_6362bdf5_0185ec78_panel | Panel
+sensor.browser_mod_faeaeedf_b1fcaf80_browser_path | Browser path
+sensor.browser_mod_faeaeedf_b1fcaf80_browser_visibility | Browser visibility
+sensor.browser_mod_faeaeedf_b1fcaf80_browser_useragent | Browser userAgent
+sensor.browser_mod_faeaeedf_b1fcaf80_browser_user | Browser user
+binary_sensor.browser_mod_faeaeedf_b1fcaf80_browser_fullykiosk | Browser FullyKiosk
+sensor.browser_mod_faeaeedf_b1fcaf80_browser_width | Browser width
+sensor.browser_mod_faeaeedf_b1fcaf80_browser_height | Browser height
+binary_sensor.browser_mod_faeaeedf_b1fcaf80_browser_dark_mode | Browser dark mode
+binary_sensor.browser_mod_faeaeedf_b1fcaf80 | N/A
+light.browser_mod_faeaeedf_b1fcaf80_screen | Screen
+media_player.browser_mod_faeaeedf_b1fcaf80 | N/A
+sensor.browser_mod_faeaeedf_b1fcaf80_panel | Panel
+sensor.browser_mod_ad8c02f8_f092dd55_browser_path | Browser path
+sensor.browser_mod_ad8c02f8_f092dd55_browser_visibility | Browser visibility
+sensor.browser_mod_ad8c02f8_f092dd55_browser_useragent | Browser userAgent
+sensor.browser_mod_ad8c02f8_f092dd55_browser_user | Browser user
+binary_sensor.browser_mod_ad8c02f8_f092dd55_browser_fullykiosk | Browser FullyKiosk
+sensor.browser_mod_ad8c02f8_f092dd55_browser_width | Browser width
+sensor.browser_mod_ad8c02f8_f092dd55_browser_height | Browser height
+binary_sensor.browser_mod_ad8c02f8_f092dd55_browser_dark_mode | Browser dark mode
+binary_sensor.browser_mod_ad8c02f8_f092dd55 | N/A
+light.browser_mod_ad8c02f8_f092dd55_screen | Screen
+media_player.browser_mod_ad8c02f8_f092dd55 | N/A
+sensor.browser_mod_ad8c02f8_f092dd55_panel | Panel
+sensor.browser_mod_83fbbc2f_0152b4ba_browser_path | browser_mod_83fbbc2f_0152b4ba Browser path
+sensor.browser_mod_83fbbc2f_0152b4ba_browser_visibility | browser_mod_83fbbc2f_0152b4ba Browser visibility
+sensor.browser_mod_83fbbc2f_0152b4ba_browser_useragent | browser_mod_83fbbc2f_0152b4ba Browser userAgent
+sensor.browser_mod_83fbbc2f_0152b4ba_browser_user | browser_mod_83fbbc2f_0152b4ba Browser user
+binary_sensor.browser_mod_83fbbc2f_0152b4ba_browser_fullykiosk | browser_mod_83fbbc2f_0152b4ba Browser FullyKiosk
+sensor.browser_mod_83fbbc2f_0152b4ba_browser_width | browser_mod_83fbbc2f_0152b4ba Browser width
+sensor.browser_mod_83fbbc2f_0152b4ba_browser_height | browser_mod_83fbbc2f_0152b4ba Browser height
+binary_sensor.browser_mod_83fbbc2f_0152b4ba_browser_dark_mode | browser_mod_83fbbc2f_0152b4ba Browser dark mode
+binary_sensor.browser_mod_83fbbc2f_0152b4ba | browser_mod_83fbbc2f_0152b4ba
+light.browser_mod_83fbbc2f_0152b4ba_screen | browser_mod_83fbbc2f_0152b4ba Screen
+media_player.browser_mod_83fbbc2f_0152b4ba | browser_mod_83fbbc2f_0152b4ba
+sensor.browser_mod_83fbbc2f_0152b4ba_panel | browser_mod_83fbbc2f_0152b4ba Panel
+sensor.browser_mod_bc4e9815_531154b3_browser_path | Browser path
+sensor.browser_mod_bc4e9815_531154b3_browser_visibility | Browser visibility
+sensor.browser_mod_bc4e9815_531154b3_browser_useragent | Browser userAgent
+sensor.browser_mod_bc4e9815_531154b3_browser_user | Browser user
+binary_sensor.browser_mod_bc4e9815_531154b3_browser_fullykiosk | Browser FullyKiosk
+sensor.browser_mod_bc4e9815_531154b3_browser_width | Browser width
+sensor.browser_mod_bc4e9815_531154b3_browser_height | Browser height
+binary_sensor.browser_mod_bc4e9815_531154b3_browser_dark_mode | Browser dark mode
+binary_sensor.browser_mod_bc4e9815_531154b3 | N/A
+light.browser_mod_bc4e9815_531154b3_screen | Screen
+media_player.browser_mod_bc4e9815_531154b3 | N/A
+sensor.browser_mod_bc4e9815_531154b3_panel | Panel
+sensor.browser_mod_57e30274_ca9ab4b1_browser_path | Browser path
+sensor.browser_mod_57e30274_ca9ab4b1_browser_visibility | Browser visibility
+sensor.browser_mod_57e30274_ca9ab4b1_browser_useragent | Browser userAgent
+sensor.browser_mod_57e30274_ca9ab4b1_browser_user | Browser user
+binary_sensor.browser_mod_57e30274_ca9ab4b1_browser_fullykiosk | Browser FullyKiosk
+sensor.browser_mod_57e30274_ca9ab4b1_browser_width | Browser width
+sensor.browser_mod_57e30274_ca9ab4b1_browser_height | Browser height
+binary_sensor.browser_mod_57e30274_ca9ab4b1_browser_dark_mode | Browser dark mode
+binary_sensor.browser_mod_57e30274_ca9ab4b1 | N/A
+light.browser_mod_57e30274_ca9ab4b1_screen | Screen
+media_player.browser_mod_57e30274_ca9ab4b1 | N/A
+sensor.browser_mod_57e30274_ca9ab4b1_panel | Panel
+sensor.browser_mod_a50818cf_ac8e952f_browser_id | browser_mod_a50818cf_ac8e952f Browser ID
+sensor.browser_mod_83fbbc2f_0152b4ba_browser_id | browser_mod_83fbbc2f_0152b4ba Browser ID
