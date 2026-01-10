@@ -194,7 +194,7 @@ export function DashboardLayout({ children }: DashboardLayoutProps) {
 
         <nav className="flex-1 p-4 space-y-1">
           {navItems.map((item) => {
-            const isActive = pathname === item.href;
+            const isActive = pathname === item.href || (item.href !== '/dashboard' && pathname.startsWith(item.href));
             return (
               <Link
                 key={item.href}
@@ -259,7 +259,7 @@ export function DashboardLayout({ children }: DashboardLayoutProps) {
       {/* Mobile Nav */}
       <nav className="md:hidden fixed bottom-0 left-0 right-0 bg-white/95 dark:bg-slate-900/95 backdrop-blur-xl border-t border-slate-200/50 dark:border-slate-700/50 flex justify-around px-1 py-2 z-50 shadow-lg">
         {navItems.map((item) => {
-          const isActive = pathname === item.href;
+          const isActive = pathname === item.href || (item.href !== '/dashboard' && pathname.startsWith(item.href));
           return (
             <Link
               key={item.href}

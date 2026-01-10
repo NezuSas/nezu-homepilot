@@ -160,66 +160,69 @@ export default function RoomDetailsPage({ roomId }: RoomDetailsPageProps) {
             <span>Back to Rooms</span>
           </button>
 
-          <div className="flex items-center justify-between">
-            <div className="flex items-center gap-4">
-              <div
-                className="p-4 rounded-2xl shadow-lg"
-                style={{
-                  background: `linear-gradient(135deg, ${room.color} 0%, ${room.color}CC 100%)`,
-                }}
-              >
-                <div className="w-16 h-16 text-white flex items-center justify-center">
-                  {(() => {
-                    // @ts-ignore
-                    const IconComponent = (Icons as any)[room.icon?.split('-').map(part => part.charAt(0).toUpperCase() + part.slice(1)).join('') || 'Home'];
-                    return IconComponent ? <IconComponent className="w-10 h-10" /> : <Icons.Home className="w-10 h-10" />;
-                  })()}
+            <div className="flex items-center justify-between flex-col sm:flex-row gap-4 sm:gap-0 items-start sm:items-center">
+              <div className="flex items-center gap-4">
+                <div
+                  className="p-4 rounded-2xl shadow-lg"
+                  style={{
+                    background: `linear-gradient(135deg, ${room.color} 0%, ${room.color}CC 100%)`,
+                  }}
+                >
+                  <div className="w-16 h-16 text-white flex items-center justify-center">
+                    {(() => {
+                      // @ts-ignore
+                      const IconComponent = (Icons as any)[room.icon?.split('-').map(part => part.charAt(0).toUpperCase() + part.slice(1)).join('') || 'Home'];
+                      return IconComponent ? <IconComponent className="w-10 h-10" /> : <Icons.Home className="w-10 h-10" />;
+                    })()}
+                  </div>
+                </div>
+                <div>
+                  <h1 className="text-3xl font-bold text-slate-900 dark:text-white">
+                    {room.name}
+                  </h1>
+                  <p className="text-slate-600 dark:text-slate-400">
+                    {devices.length} devices
+                  </p>
                 </div>
               </div>
-              <div>
-                <h1 className="text-3xl font-bold text-slate-900 dark:text-white">
-                  {room.name}
-                </h1>
-                <p className="text-slate-600 dark:text-slate-400">
-                  {devices.length} devices
-                </p>
+
+              {/* Quick Actions */}
+              <div className="flex items-center gap-2 w-full sm:w-auto">
+                <button
+                  onClick={() => setIsAssignModalOpen(true)}
+                  className={cn(
+                    "px-3 py-2 rounded-xl font-semibold transition-all flex items-center justify-center gap-2 flex-1 sm:flex-initial",
+                    "bg-blue-500 hover:bg-blue-600 text-white shadow-lg text-sm"
+                  )}
+                >
+                  <Plus className="w-4 h-4" />
+                  <span className="hidden sm:inline">Assign Devices</span>
+                  <span className="sm:hidden">Assign</span>
+                </button>
+                <button
+                  onClick={() => handleToggleAll(true)}
+                  className={cn(
+                    "px-3 py-2 rounded-xl font-semibold transition-all flex items-center justify-center gap-2 flex-1 sm:flex-initial",
+                    "bg-emerald-500 hover:bg-emerald-600 text-white shadow-lg text-sm"
+                  )}
+                >
+                  <Power className="w-4 h-4" />
+                  <span className="hidden sm:inline">All On</span>
+                  <span className="sm:hidden">On</span>
+                </button>
+                <button
+                  onClick={() => handleToggleAll(false)}
+                  className={cn(
+                    "px-3 py-2 rounded-xl font-semibold transition-all flex items-center justify-center gap-2 flex-1 sm:flex-initial",
+                    "bg-slate-500 hover:bg-slate-600 text-white shadow-lg text-sm"
+                  )}
+                >
+                  <Power className="w-4 h-4" />
+                  <span className="hidden sm:inline">All Off</span>
+                  <span className="sm:hidden">Off</span>
+                </button>
               </div>
             </div>
-
-            {/* Quick Actions */}
-            <div className="flex items-center gap-2">
-              <button
-                onClick={() => setIsAssignModalOpen(true)}
-                className={cn(
-                  "px-4 py-2 rounded-xl font-semibold transition-all flex items-center gap-2",
-                  "bg-blue-500 hover:bg-blue-600 text-white shadow-lg"
-                )}
-              >
-                <Plus className="w-4 h-4" />
-                Assign Devices
-              </button>
-              <button
-                onClick={() => handleToggleAll(true)}
-                className={cn(
-                  "px-4 py-2 rounded-xl font-semibold transition-all flex items-center gap-2",
-                  "bg-emerald-500 hover:bg-emerald-600 text-white shadow-lg"
-                )}
-              >
-                <Power className="w-4 h-4" />
-                All On
-              </button>
-              <button
-                onClick={() => handleToggleAll(false)}
-                className={cn(
-                  "px-4 py-2 rounded-xl font-semibold transition-all flex items-center gap-2",
-                  "bg-slate-500 hover:bg-slate-600 text-white shadow-lg"
-                )}
-              >
-                <Power className="w-4 h-4" />
-                All Off
-              </button>
-            </div>
-          </div>
         </div>
 
         {/* Devices Grid */}
