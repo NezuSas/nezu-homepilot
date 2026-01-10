@@ -186,23 +186,24 @@ export function DashboardPage() {
   const isLoading = isLayoutLoading || (isDataLoading && devices.length === 0);
 
   return (
-    <div className="space-y-8 pb-20 md:pb-0">
-      <div className="flex items-center justify-between">
+    <div className="space-y-6 md:space-y-8 pb-20 md:pb-0">
+      <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
         <WelcomeHeader userName={userName} />
-        <div className="flex gap-2">
+        <div className="flex gap-2 w-full sm:w-auto">
           {isEditMode && (
             <>
               <button
                 onClick={() => setIsAddCardModalOpen(true)}
-                className="flex items-center gap-2 px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition-colors shadow-sm shadow-blue-500/20"
+                className="flex items-center justify-center gap-2 px-3 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition-colors shadow-sm shadow-blue-500/20 text-sm flex-1 sm:flex-initial"
               >
                 <Plus className="w-4 h-4" />
-                Agregar Tarjeta
+                <span className="hidden sm:inline">Agregar Tarjeta</span>
+                <span className="sm:hidden">Agregar</span>
               </button>
               <button
                 onClick={handleSaveLayout}
                 disabled={isSaving}
-                className="flex items-center gap-2 px-4 py-2 bg-slate-900 dark:bg-white text-white dark:text-slate-900 rounded-lg hover:bg-slate-800 dark:hover:bg-slate-100 transition-all shadow-sm disabled:opacity-50 font-medium"
+                className="flex items-center justify-center gap-2 px-3 py-2 bg-slate-900 dark:bg-white text-white dark:text-slate-900 rounded-lg hover:bg-slate-800 dark:hover:bg-slate-100 transition-all shadow-sm disabled:opacity-50 font-medium text-sm flex-1 sm:flex-initial"
               >
                 <Save className="w-4 h-4" />
                 {isSaving ? 'Guardando...' : 'Guardar'}
@@ -211,7 +212,7 @@ export function DashboardPage() {
           )}
           <button
             onClick={() => setIsEditMode(!isEditMode)}
-            className={`flex items-center gap-2 px-4 py-2 rounded-lg transition-all font-medium ${
+            className={`flex items-center justify-center gap-2 px-3 py-2 rounded-lg transition-all font-medium text-sm flex-1 sm:flex-initial ${
               isEditMode
                 ? "bg-white dark:bg-slate-800 text-slate-600 dark:text-slate-300 border border-slate-200 dark:border-slate-700 hover:bg-slate-50 dark:hover:bg-slate-700"
                 : "bg-blue-500 text-white hover:bg-blue-600 shadow-sm shadow-blue-500/20"
@@ -224,7 +225,8 @@ export function DashboardPage() {
             ) : (
               <>
                 <Settings className="w-4 h-4" />
-                Editar Dashboard
+                <span className="hidden sm:inline">Editar Dashboard</span>
+                <span className="sm:hidden">Editar</span>
               </>
             )}
           </button>
