@@ -103,8 +103,10 @@ WSGI_APPLICATION = 'config.wsgi.application'
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
 DATABASES = {
-    'default': env.db(),
+    'default': env.db('DATABASE_URL', default='sqlite:///db.sqlite3'),
 }
+# Enable connection pooling
+DATABASES['default']['CONN_MAX_AGE'] = 600
 
 
 # Password validation
