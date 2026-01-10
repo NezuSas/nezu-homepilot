@@ -67,15 +67,15 @@ export function CustomizableGrid({
         return (
           <button
             onClick={() => onExecuteRoutine && routine.id !== undefined && onExecuteRoutine(routine.id)}
-            className="w-full h-full bg-gradient-to-br from-purple-500 to-purple-600 dark:from-purple-600 dark:to-purple-800 rounded-xl p-4 shadow-sm hover:shadow-md transition-all active:scale-95 text-left group"
+            className="w-full h-full bg-gradient-to-br from-purple-500 to-purple-600 dark:from-purple-600 dark:to-purple-800 rounded-xl p-3 md:p-4 shadow-sm hover:shadow-md transition-all active:scale-95 text-left group"
           >
-            <div className="flex items-center justify-between mb-2">
-              <div className="p-2 rounded-lg bg-white/20 backdrop-blur-sm">
-                <Play className="w-5 h-5 text-white" />
+            <div className="flex items-center justify-between mb-1 md:mb-2">
+              <div className="p-1.5 md:p-2 rounded-lg bg-white/20 backdrop-blur-sm">
+                <Play className="w-4 h-4 md:w-5 md:h-5 text-white" />
               </div>
-              <span className="text-xs text-purple-100">{routine.actions.length} acciones</span>
+              <span className="text-[10px] md:text-xs text-purple-100">{routine.actions.length} acciones</span>
             </div>
-            <h3 className="font-semibold text-white truncate">{routine.name}</h3>
+            <h3 className="text-sm md:text-base font-semibold text-white truncate">{routine.name}</h3>
           </button>
         );
 
@@ -85,24 +85,24 @@ export function CustomizableGrid({
         return (
           <button
             onClick={() => onExecuteScene && onExecuteScene(scene.id)}
-            className="w-full h-full bg-gradient-to-br from-indigo-500 to-indigo-600 dark:from-indigo-600 dark:to-indigo-800 rounded-xl p-4 shadow-sm hover:shadow-md transition-all active:scale-95 text-left group"
+            className="w-full h-full bg-gradient-to-br from-indigo-500 to-indigo-600 dark:from-indigo-600 dark:to-indigo-800 rounded-xl p-3 md:p-4 shadow-sm hover:shadow-md transition-all active:scale-95 text-left group"
           >
-            <div className="flex items-center justify-between mb-2">
-              <div className="p-2 rounded-lg bg-white/20 backdrop-blur-sm">
-                <Layers className="w-5 h-5 text-white" />
+            <div className="flex items-center justify-between mb-1 md:mb-2">
+              <div className="p-1.5 md:p-2 rounded-lg bg-white/20 backdrop-blur-sm">
+                <Layers className="w-4 h-4 md:w-5 md:h-5 text-white" />
               </div>
-              <span className="text-xs text-indigo-100">Escena</span>
+              <span className="text-[10px] md:text-xs text-indigo-100">Escena</span>
             </div>
-            <h3 className="font-semibold text-white truncate">{scene.name}</h3>
+            <h3 className="text-sm md:text-base font-semibold text-white truncate">{scene.name}</h3>
           </button>
         );
 
       case 'summary':
         const activeDevicesCount = devices.filter(d => d.isOn).length;
         return (
-          <div className="bg-gradient-to-br from-blue-500 to-blue-600 dark:from-blue-600 dark:to-blue-800 rounded-xl p-4 shadow-lg shadow-blue-500/20 h-full flex flex-col justify-center text-white">
-            <div className="text-4xl font-bold mb-1">{activeDevicesCount}</div>
-            <div className="text-sm font-medium text-blue-100">Dispositivos Activos</div>
+          <div className="bg-gradient-to-br from-blue-500 to-blue-600 dark:from-blue-600 dark:to-blue-800 rounded-xl p-3 md:p-4 shadow-lg shadow-blue-500/20 h-full flex flex-col justify-center text-white">
+            <div className="text-3xl md:text-4xl font-bold mb-1">{activeDevicesCount}</div>
+            <div className="text-xs md:text-sm font-medium text-blue-100">Dispositivos Activos</div>
           </div>
         );
       
@@ -111,13 +111,26 @@ export function CustomizableGrid({
     }
   };
 
+  // Calculate responsive columns based on container width
+  const getResponsiveCols = () => {
+    if (containerWidth < 640) return 2; // Mobile: 2 columns
+    if (containerWidth < 768) return 4; // Tablet portrait: 4 columns
+    if (containerWidth < 1024) return 8; // Tablet landscape: 8 columns
+    return 12; // Desktop: 12 columns
+  };
+
+  const getResponsiveRowHeight = () => {
+    if (containerWidth < 640) return 80; // Mobile: smaller cards
+    return 100; // Desktop/tablet: standard size
+  };
+
   return (
     <div ref={containerRef} className="w-full">
       <GridLayout
         className="layout"
         layout={layout}
-        cols={12}
-        rowHeight={100}
+        cols={getResponsiveCols()}
+        rowHeight={getResponsiveRowHeight()}
         width={containerWidth}
         isDraggable={isEditMode}
         isResizable={isEditMode}
