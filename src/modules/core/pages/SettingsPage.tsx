@@ -7,10 +7,25 @@ import { Input } from "../../core/components/Input";
 import { ChangePasswordModal } from "../../core/components/ChangePasswordModal";
 import { WallpaperSelector } from "../../settings/components/WallpaperSelector";
 import { useTheme } from "../../core/providers/ThemeProvider";
+import { WelcomeHeader } from "../../dashboard/components/WelcomeHeader";
+import { authService } from "../../auth/services/authService";
 
 export function SettingsPage() {
   const [isPasswordModalOpen, setIsPasswordModalOpen] = React.useState(false);
   const { activeTheme, setTheme } = useTheme();
+  const [userName, setUserName] = React.useState("Usuario");
+
+  React.useEffect(() => {
+    const loadUser = async () => {
+      try {
+        const user = await authService.me();
+        setUserName(user.first_name || user.username);
+      } catch (error) {
+        console.error("Error loading user:", error);
+      }
+    };
+    loadUser();
+  }, []);
 
   const themes = [
     { id: 'none' as const, name: 'Sin Tema', emoji: '🚫', description: 'Sin efectos especiales' },
@@ -25,6 +40,7 @@ export function SettingsPage() {
 
   return (
     <div className="space-y-6">
+      <WelcomeHeader userName={userName} />
       {/* General Section */}
       <Card>
         <CardHeader>

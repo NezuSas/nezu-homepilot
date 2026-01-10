@@ -58,10 +58,10 @@ export function WelcomeHeader({ userName = "Usuario" }: WelcomeHeaderProps) {
           </Button>
 
           {showNotifications && (
-            <div className="absolute right-0 top-full mt-2 w-[calc(100vw-2rem)] md:w-80 z-50 -mr-14 md:mr-0">
-              <Card className="p-4 shadow-xl border-slate-200/50 dark:border-slate-700/50 bg-white/95 dark:bg-slate-900/95 backdrop-blur-md">
+            <div className="fixed md:absolute right-2 md:right-0 top-16 md:top-full md:mt-2 w-[calc(100vw-1rem)] max-w-sm md:w-80 z-50">
+              <Card className="p-4 shadow-xl border-slate-200/50 dark:border-slate-700/50 bg-white/98 dark:bg-slate-900/98 backdrop-blur-md">
                 <h3 className="font-semibold mb-3 text-slate-900 dark:text-white">Notificaciones</h3>
-                <div className="space-y-3">
+                <div className="space-y-3 max-h-[60vh] overflow-y-auto">
                   <div className="p-3 bg-blue-50 dark:bg-blue-900/20 rounded-lg text-sm border border-blue-100 dark:border-blue-800/30">
                     <div className="flex justify-between items-start mb-1">
                       <p className="font-medium text-blue-900 dark:text-blue-100">Bienvenido</p>

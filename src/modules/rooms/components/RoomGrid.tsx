@@ -181,16 +181,16 @@ export function RoomGrid({
         <button
           onClick={onAddRoom}
           className={cn(
-            "fixed bottom-8 right-8 w-16 h-16 rounded-full",
+            "fixed bottom-20 md:bottom-8 right-4 md:right-8 w-14 h-14 md:w-16 md:h-16 rounded-full",
             "bg-gradient-to-r from-blue-500 to-purple-600 text-white",
             "shadow-2xl hover:shadow-3xl",
             "transform hover:scale-110 transition-all duration-300",
             "flex items-center justify-center",
-            "z-50"
+            "z-40"
           )}
           title="Add Room"
         >
-          <Plus className="w-8 h-8" />
+          <Plus className="w-7 h-7 md:w-8 md:h-8" />
         </button>
       )}
     </div>

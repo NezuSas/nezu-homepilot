@@ -94,19 +94,20 @@ export function DevicesPage() {
 
   return (
     <div className="space-y-6">
-      <div className="flex items-center justify-between">
+      <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
         <div>
           <h1 className="text-2xl font-bold text-slate-900 dark:text-white">Dispositivos</h1>
           <p className="text-slate-500 dark:text-slate-400">Gestiona todos tus dispositivos inteligentes</p>
         </div>
-        <div className="flex gap-2">
-          <Button onClick={handleSync} disabled={isSyncing} variant="outline">
-            <RefreshCw className={`h-4 w-4 mr-2 ${isSyncing ? 'animate-spin' : ''}`} />
-            {isSyncing ? 'Sincronizando...' : 'Sincronizar'}
+        <div className="flex gap-2 w-full sm:w-auto">
+          <Button onClick={handleSync} disabled={isSyncing} variant="outline" className="flex-1 sm:flex-initial">
+            <RefreshCw className={`h-4 w-4 sm:mr-2 ${isSyncing ? 'animate-spin' : ''}`} />
+            <span className="hidden sm:inline">{isSyncing ? 'Sincronizando...' : 'Sincronizar'}</span>
           </Button>
-          <Button onClick={() => setIsModalOpen(true)}>
-            <Plus className="h-4 w-4 mr-2" />
-            Agregar Dispositivo
+          <Button onClick={() => setIsModalOpen(true)} className="flex-1 sm:flex-initial">
+            <Plus className="h-4 w-4 sm:mr-2" />
+            <span className="hidden sm:inline">Agregar Dispositivo</span>
+            <span className="sm:hidden">Agregar</span>
           </Button>
         </div>
       </div>
