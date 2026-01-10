@@ -44,6 +44,8 @@ export function CreateRoutineModal({ isOpen, onClose, onSave, devices }: CreateR
         aliases: aliases.split(',').map(a => a.trim()).filter(a => a),
         icon, 
         color, 
+        is_active: true,
+        triggers: [],
         actions 
       });
       // Reset form
