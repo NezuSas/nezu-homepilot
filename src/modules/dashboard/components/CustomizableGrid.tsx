@@ -7,6 +7,7 @@ import { CardConfig } from "../types/layout";
 import { DeviceCard } from "../../devices/components/DeviceCard";
 import { Scene } from "../../routines/types/routine";
 import { NezuRoutine } from "../../routines/types/nezuRoutine";
+import { Device } from "../../devices/types/device";
 import { X, Edit, Play, Layers } from "lucide-react";
 
 interface CustomizableGridProps {
@@ -65,7 +66,7 @@ export function CustomizableGrid({
         if (!routine) return <div className="p-4 text-slate-500">Routine not found</div>;
         return (
           <button
-            onClick={() => onExecuteRoutine && onExecuteRoutine(routine.id)}
+            onClick={() => onExecuteRoutine && routine.id !== undefined && onExecuteRoutine(routine.id)}
             className="w-full h-full bg-gradient-to-br from-purple-500 to-purple-600 dark:from-purple-600 dark:to-purple-800 rounded-xl p-4 shadow-sm hover:shadow-md transition-all active:scale-95 text-left group"
           >
             <div className="flex items-center justify-between mb-2">

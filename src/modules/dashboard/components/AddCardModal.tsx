@@ -44,8 +44,8 @@ export function AddCardModal({
     .map(c => c.sceneId);
   
   const availableDevices = devices.filter(d => d.isOnline && !existingDeviceIds.includes(d.id));
-  const availableRoutines = routines.filter(r => !existingRoutineIds.includes(String(r.id)));
-  const availableScenes = scenes.filter(s => !existingSceneIds.includes(String(s.id)));
+  const availableRoutines = routines.filter(r => r.id !== undefined && !existingRoutineIds.includes(String(r.id)));
+  const availableScenes = scenes.filter(s => s.id !== undefined && !existingSceneIds.includes(String(s.id)));
 
   const handleAddDevice = (device: Device) => {
     onAddCard({
@@ -57,6 +57,7 @@ export function AddCardModal({
   };
 
   const handleAddRoutine = (routine: NezuRoutine) => {
+    if (routine.id === undefined) return;
     onAddCard({
       id: `routine-${routine.id}`,
       type: 'routine',
