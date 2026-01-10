@@ -4,7 +4,7 @@ from typing import Dict, Any, List, Optional
 
 class HomeAssistantClient:
     def __init__(self):
-        self.base_url = getattr(settings, 'HOMEASSISTANT_URL', 'http://homeassistant.local:8123')
+        self.base_url = getattr(settings, 'HOMEASSISTANT_URL', 'http://homeassistant.local:8123').rstrip('/')
         self.token = getattr(settings, 'HOMEASSISTANT_TOKEN', '')
         self.headers = {
             "Authorization": f"Bearer {self.token}",
